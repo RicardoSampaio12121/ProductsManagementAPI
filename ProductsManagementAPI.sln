@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementAPI", "ProductsManagementAPI\ProductsManagementAPI.csproj", "{C51AF4E4-6ED2-4D4C-A908-BA9363987195}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagementBLL", "ProductsManagementBLL\ProductsManagementBLL.csproj", "{175E2780-9F5D-4FAE-B2BA-513F30703263}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementBLL", "ProductsManagementBLL\ProductsManagementBLL.csproj", "{175E2780-9F5D-4FAE-B2BA-513F30703263}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagementDAL", "ProductsManagementDAL\ProductsManagementDAL.csproj", "{81D8A981-838D-4535-B2BB-0A82D5176931}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementDAL", "ProductsManagementDAL\ProductsManagementDAL.csproj", "{81D8A981-838D-4535-B2BB-0A82D5176931}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagementDTOs", "ProductsManagementDTOs\ProductsManagementDTOs.csproj", "{6444377A-A0E3-45E7-9EDE-D7AC571D8B02}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementDTOs", "ProductsManagementDTOs\ProductsManagementDTOs.csproj", "{6444377A-A0E3-45E7-9EDE-D7AC571D8B02}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagementDI", "ProductsManagementDI\ProductsManagementDI.csproj", "{4A48D0DD-B827-49A6-B5D4-8B473BC3C5CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementDI", "ProductsManagementDI\ProductsManagementDI.csproj", "{4A48D0DD-B827-49A6-B5D4-8B473BC3C5CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagementEntities", "ProductsManagementEntities\ProductsManagementEntities.csproj", "{3E5CB80C-E080-487B-8528-CCEDC719E56B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementEntities", "ProductsManagementEntities\ProductsManagementEntities.csproj", "{3E5CB80C-E080-487B-8528-CCEDC719E56B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductsManagementTests", "ProductsManagementTests\ProductsManagementTests.csproj", "{FEC52145-C7C0-48BB-BBE5-3834123839A8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementTests", "ProductsManagementTests\ProductsManagementTests.csproj", "{FEC52145-C7C0-48BB-BBE5-3834123839A8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductsManagementSAPI", "ProductsManagementSAPI\ProductsManagementSAPI.csproj", "{96031168-E1F5-483F-B2BE-974B430DC79A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C51AF4E4-6ED2-4D4C-A908-BA9363987195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C51AF4E4-6ED2-4D4C-A908-BA9363987195}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C51AF4E4-6ED2-4D4C-A908-BA9363987195}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C51AF4E4-6ED2-4D4C-A908-BA9363987195}.Release|Any CPU.Build.0 = Release|Any CPU
 		{175E2780-9F5D-4FAE-B2BA-513F30703263}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{175E2780-9F5D-4FAE-B2BA-513F30703263}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{175E2780-9F5D-4FAE-B2BA-513F30703263}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -51,6 +47,10 @@ Global
 		{FEC52145-C7C0-48BB-BBE5-3834123839A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEC52145-C7C0-48BB-BBE5-3834123839A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEC52145-C7C0-48BB-BBE5-3834123839A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96031168-E1F5-483F-B2BE-974B430DC79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96031168-E1F5-483F-B2BE-974B430DC79A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96031168-E1F5-483F-B2BE-974B430DC79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96031168-E1F5-483F-B2BE-974B430DC79A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

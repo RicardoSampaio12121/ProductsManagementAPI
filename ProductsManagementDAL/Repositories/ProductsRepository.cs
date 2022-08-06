@@ -1,5 +1,6 @@
 ﻿using ProductsManagementDAL.Repositories.IRepositories;
 using ProductsManagementDTOs;
+using ProductsManagementEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +9,13 @@ using System.Threading.Tasks;
 
 namespace ProductsManagementDAL.Repositories
 {
-    public class ProductsRepository : IProductsRepository
+    public class ProductsRepository : GenericRepository<Products>, IProductsRepository
     {
-        public Task AddNewProduct(AddProductDto product)
+        private readonly DataContext _dbContext;
+
+        public ProductsRepository(DataContext dataContext) : base(dataContext)
         {
-            throw new NotImplementedException();
+            _dbContext = dataContext;
         }
     }
 }

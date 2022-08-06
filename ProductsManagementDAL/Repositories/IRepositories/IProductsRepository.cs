@@ -1,4 +1,5 @@
 ﻿using ProductsManagementDTOs;
+using ProductsManagementEntities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,8 +8,5 @@ using System.Threading.Tasks;
 
 namespace ProductsManagementDAL.Repositories.IRepositories
 {
-    public interface IProductsRepository
-    {
-        Task AddNewProduct(AddProductDto product);
-    }
+    public interface IProductsRepository: IGenericRepository<Products> { }
 }

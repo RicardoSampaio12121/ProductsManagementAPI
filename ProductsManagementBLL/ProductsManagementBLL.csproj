@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ProductsManagementDAL\ProductsManagementDAL.csproj" />
     <ProjectReference Include="..\ProductsManagementDTOs\ProductsManagementDTOs.csproj" />
   </ItemGroup>
 
