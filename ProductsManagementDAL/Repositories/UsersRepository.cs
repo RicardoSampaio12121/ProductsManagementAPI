@@ -3,11 +3,11 @@ using ProductsManagementEntities;
 
 namespace ProductsManagementDAL.Repositories
 {
-    public class AuthenticationRepository : GenericRepository<Users>, IAuthenticationRepository
+    public class UsersRepository : GenericRepository<Users>, IUsersRepository
     {
         private readonly DataContext _dataContext;
 
-        public AuthenticationRepository(DataContext dataContext) : base(dataContext)
+        public UsersRepository(DataContext dataContext) : base(dataContext)
         {
             _dataContext = dataContext;
         }

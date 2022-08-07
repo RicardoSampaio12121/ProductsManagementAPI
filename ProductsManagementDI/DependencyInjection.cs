@@ -29,7 +29,9 @@ namespace ProductsManagementDI
             services.AddScoped<IProductsRepository, ProductsRepository>();
 
             services.AddScoped<IAuthenticationService, AuthenticationService>();
-            services.AddScoped<IAuthenticationRepository, AuthenticationRepository>();
+            services.AddScoped<IUsersRepository, UsersRepository>();
+
+            services.AddScoped<IAdminService, AdminService>();
         }
     }
 }

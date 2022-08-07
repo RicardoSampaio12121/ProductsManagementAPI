@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ProductsManagementDAL.Repositories.IRepositories
 {
-    public interface IAuthenticationRepository: IGenericRepository<Users>
+    public interface IUsersRepository: IGenericRepository<Users>
     {
     }
 }

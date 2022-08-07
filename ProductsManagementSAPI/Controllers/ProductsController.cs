@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ProductsManagementBLL.Services.IServices;
 using ProductsManagementDTOs;
 using ProductsManagementEntities;
@@ -6,6 +7,7 @@ using ProductsManagementEntities;
 namespace ProductsManagementSAPI.Controllers
 {
     [ApiController]
+    [Authorize]
     [Route("products")]
     public class ProductsController : Controller
     {

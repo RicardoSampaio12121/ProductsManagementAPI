@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProductsManagementDTOs.AuthenticationDtos
+namespace ProductsManagementDTOs.UsersDtos
 {
     public record LoginDto(int uid, string password);
 }

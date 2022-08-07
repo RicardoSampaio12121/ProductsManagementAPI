@@ -1,7 +1,7 @@
 ﻿using ProductsManagementBLL.Services.IServices;
 using ProductsManagementBLL.Utils;
 using ProductsManagementDAL.Repositories.IRepositories;
-using ProductsManagementDTOs.AuthenticationDtos;
+using ProductsManagementDTOs.UsersDtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,9 +12,9 @@ namespace ProductsManagementBLL.Services
 {
     public class AuthenticationService : IAuthenticationService
     {
-        private readonly IAuthenticationRepository _authRepo;
+        private readonly IUsersRepository _authRepo;
 
-        public AuthenticationService(IAuthenticationRepository authRepo)
+        public AuthenticationService(IUsersRepository authRepo)
         {
             _authRepo = authRepo;
         }
@@ -27,7 +27,8 @@ namespace ProductsManagementBLL.Services
             // Verificar se utilizador existe
             if (user == null) throw new Exception("There is no user assigned with that id!");
 
-            //TODO: Comparar passwords encriptadas
+            //Comparar passwords encriptadas
+           // PasswordUtils.ValidatePassword(dto.password, user.Password);
 
             //TODO: Eliminar esta parte que compara passwords por encriptar
             if (user.Password != dto.password) throw new Exception("Wrong id or password!");

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ProductsManagementBLL.Services.IServices;
-using ProductsManagementDTOs.AuthenticationDtos;
+using ProductsManagementDTOs.UsersDtos;
 
 namespace ProductsManagementSAPI.Controllers
 {
