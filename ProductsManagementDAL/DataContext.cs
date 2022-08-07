@@ -17,5 +17,6 @@ namespace ProductsManagementDAL
             => options.UseSqlServer("server = localhost; Database = ProductsManagementDB; Trusted_Connection = True;");
 
         public DbSet<Products> Products { get; set; }
+        public DbSet<Users> Users { get; set; }
     }
 }
