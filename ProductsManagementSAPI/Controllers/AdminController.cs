@@ -18,6 +18,10 @@ namespace ProductsManagementSAPI.Controllers
             _adminService = adminService;
         }
 
+        /// <summary>
+        /// This endpoint returns the information of an user
+        /// </summary>
+        /// <param name="userId"></param>
         [HttpGet("getUser/{userId}")]
         public async Task<IActionResult> GetUser(int userId)
         {
@@ -25,6 +29,11 @@ namespace ProductsManagementSAPI.Controllers
             return Ok(user);
         }
 
+        /// <summary>
+        /// This endpoint is used to create a new user in the database
+        /// </summary>
+        /// <param name="dto"></param>
+        /// <returns></returns>
         [HttpPost("newUser")]
         public async Task<IActionResult> CreateNewUser(NewUserDto dto)
         {

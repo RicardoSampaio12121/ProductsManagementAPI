@@ -15,6 +15,10 @@ namespace ProductsManagementSAPI.Controllers
             _authService = authService;
         }
 
+        /// <summary>
+        /// This endpoint is used to retrive the jwt token after the user logs in
+        /// </summary>
+        /// <param name="dto"></param>
         [HttpPost("login")]
         public async Task<IActionResult> Login(LoginDto dto)
         {
